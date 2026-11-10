@@ -1,0 +1,314 @@
+[
+  {
+    "id": "A01",
+    "name": "Signup rejects a malformed registration number",
+    "ok": true,
+    "detail": 400
+  },
+  {
+    "id": "A02",
+    "name": "Signup rejects a short password",
+    "ok": true,
+    "detail": 400
+  },
+  {
+    "id": "A03",
+    "name": "Student signup succeeds and returns a token",
+    "ok": true,
+    "detail": 201
+  },
+  {
+    "id": "A04",
+    "name": "Duplicate email or registration number is refused",
+    "ok": true,
+    "detail": 409
+  },
+  {
+    "id": "A05",
+    "name": "Login rejects a wrong password",
+    "ok": true,
+    "detail": 401
+  },
+  {
+    "id": "A06",
+    "name": "Login accepts the right password",
+    "ok": true,
+    "detail": 200
+  },
+  {
+    "id": "A07",
+    "name": "A student cannot log in through the admin role",
+    "ok": true,
+    "detail": 401
+  },
+  {
+    "id": "A08",
+    "name": "Listings need a login",
+    "ok": true,
+    "detail": 401
+  },
+  {
+    "id": "A09",
+    "name": "Student sees only the three approved seed jobs",
+    "ok": true,
+    "detail": "{\"jobs\":[{\"id\":3,\"companyId\":2,\"companyName\":\"Opay.co\",\"title\":\"Backend Intern\","
+  },
+  {
+    "id": "A10",
+    "name": "Search by keyword filters the listings",
+    "ok": true,
+    "detail": "{\"jobs\":[{\"id\":2,\"companyId\":2,\"companyName\":\"Opay.co\",\"title\":\"Data Analyst\",\"t"
+  },
+  {
+    "id": "A11",
+    "name": "Filter by type works",
+    "ok": true,
+    "detail": "{\"jobs\":[{\"id\":3,\"companyId\":2,\"companyName\":\"Opay.co\",\"title\":\"Backend Intern\","
+  },
+  {
+    "id": "A12",
+    "name": "Student can apply",
+    "ok": true,
+    "detail": 201
+  },
+  {
+    "id": "A13",
+    "name": "Applying twice is refused",
+    "ok": true,
+    "detail": 409
+  },
+  {
+    "id": "A14",
+    "name": "My applications lists the application as Pending",
+    "ok": true,
+    "detail": "{\"applications\":[{\"id\":1,\"status\":\"Pending\",\"appliedDate\":\"2026-11-07\",\"jobId\":1"
+  },
+  {
+    "id": "A15",
+    "name": "Student can register for an event",
+    "ok": true,
+    "detail": 201
+  },
+  {
+    "id": "A16",
+    "name": "Registering twice is refused",
+    "ok": true,
+    "detail": 409
+  },
+  {
+    "id": "A17",
+    "name": "Registration is stored and shown as registered",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "A18",
+    "name": "Company signup starts as pending",
+    "ok": true,
+    "detail": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiY29tcGFueSIsImlkIjo0L"
+  },
+  {
+    "id": "A19",
+    "name": "A pending company cannot post a job",
+    "ok": true,
+    "detail": 403
+  },
+  {
+    "id": "A20",
+    "name": "A student cannot open company routes",
+    "ok": true,
+    "detail": 403
+  },
+  {
+    "id": "A21",
+    "name": "A company cannot open admin routes",
+    "ok": true,
+    "detail": 403
+  },
+  {
+    "id": "A22",
+    "name": "Admin approves the company",
+    "ok": true,
+    "detail": 200
+  },
+  {
+    "id": "A23",
+    "name": "An approved company can post a job",
+    "ok": true,
+    "detail": 201
+  },
+  {
+    "id": "A24",
+    "name": "An approved company can post an event",
+    "ok": true,
+    "detail": 201
+  },
+  {
+    "id": "A25",
+    "name": "A new job stays hidden from students until moderated",
+    "ok": true,
+    "detail": "{\"jobs\":[]}"
+  },
+  {
+    "id": "A26",
+    "name": "Moderation queue holds the new job and event",
+    "ok": true,
+    "detail": "{\"listings\":[{\"id\":4,\"companyId\":4,\"companyName\":\"Bright Labs\",\"title\":\"Frontend"
+  },
+  {
+    "id": "A27",
+    "name": "Approved job becomes visible to students",
+    "ok": true,
+    "detail": "{\"jobs\":[{\"id\":4,\"companyId\":4,\"companyName\":\"Bright Labs\",\"title\":\"Frontend Int"
+  },
+  {
+    "id": "A28",
+    "name": "Company sees the student who applied",
+    "ok": true,
+    "detail": "{\"applicants\":[{\"id\":1,\"status\":\"Pending\",\"appliedDate\":\"2026-11-07\",\"jobTitle\":\"Javascript Develope"
+  },
+  {
+    "id": "A29",
+    "name": "Another company does not see that applicant",
+    "ok": true,
+    "detail": "{\"applicants\":[]}"
+  },
+  {
+    "id": "A30",
+    "name": "Another company cannot change that application",
+    "ok": true,
+    "detail": 404
+  },
+  {
+    "id": "A31",
+    "name": "The owning company can mark it reviewed",
+    "ok": true,
+    "detail": 200
+  },
+  {
+    "id": "A32",
+    "name": "Student sees the new status",
+    "ok": true,
+    "detail": "{\"applications\":[{\"id\":1,\"status\":\"Reviewed\",\"appliedDate\":\"2026-11-07\",\"jobId\":"
+  },
+  {
+    "id": "A33",
+    "name": "A bad token is refused",
+    "ok": true,
+    "detail": 401
+  },
+  {
+    "id": "A34",
+    "name": "Admin overview returns counts",
+    "ok": true,
+    "detail": "{\"companies\":4,\"pendingCompanies\":1,\"students\":1,\"activeListings\":7,\"pendingListings\":0,\"applications\":1}"
+  },
+  {
+    "id": "A35",
+    "name": "CV upload rejects a file type that is not PDF, DOC, or DOCX",
+    "ok": true,
+    "detail": 400
+  },
+  {
+    "id": "A36",
+    "name": "CV upload rejects a fake PDF",
+    "ok": true,
+    "detail": 400
+  },
+  {
+    "id": "A37",
+    "name": "CV upload rejects a file over 2 MB",
+    "ok": true,
+    "detail": 413
+  },
+  {
+    "id": "A38",
+    "name": "A valid PDF is accepted and the file name is shown on the profile",
+    "ok": true,
+    "detail": "{\"user\":{\"role\":\"student\",\"id\":1,\"name\":\"Test Student\",\"email\":\"test.student@buk.edu.ng\",\"faculty\":\""
+  },
+  {
+    "id": "A39",
+    "name": "The student can download their own CV unchanged",
+    "ok": true,
+    "detail": 200
+  },
+  {
+    "id": "A40",
+    "name": "The applicant list shows that a CV is available",
+    "ok": true,
+    "detail": "{\"applicants\":[{\"id\":1,\"status\":\"Reviewed\",\"appliedDate\":\"2026-11-07\",\"jobTitle\":\"Javascript Develop"
+  },
+  {
+    "id": "A41",
+    "name": "The owning company can download the applicant's CV",
+    "ok": true,
+    "detail": 200
+  },
+  {
+    "id": "A42",
+    "name": "Another company cannot download that CV",
+    "ok": true,
+    "detail": 404
+  },
+  {
+    "id": "A43",
+    "name": "A company cannot use the student CV route",
+    "ok": true,
+    "detail": 403
+  },
+  {
+    "id": "A44",
+    "name": "The student can remove their CV",
+    "ok": true,
+    "detail": "{\"user\":{\"role\":\"student\",\"id\":1,\"name\":\"Test Student\",\"email\":\"test.student@buk.edu.ng\",\"faculty\":\""
+  },
+  {
+    "id": "A45",
+    "name": "A job without requirements and qualifications is refused",
+    "ok": true,
+    "detail": 400
+  },
+  {
+    "id": "A46",
+    "name": "Students see the requirements and qualifications of a listing",
+    "ok": true,
+    "detail": "{\"jobs\":[{\"id\":4,\"companyId\":4,\"companyName\":\"Bright Labs\",\"title\":\"Frontend Intern\",\"type\":\"Internship\",\"location\":\"Kan"
+  },
+  {
+    "id": "A47",
+    "name": "The company approves the application and the server reports the email as sent",
+    "ok": true,
+    "detail": "{\"ok\":true,\"email\":\"sent\"}"
+  },
+  {
+    "id": "A48",
+    "name": "The student receives an approval email naming the job",
+    "ok": true,
+    "detail": "[{\"to\":\"test.student@buk.edu.ng\",\"subject\":\"Your application for Javascript Developer at NYM Tech has been approved\",\"body\":\"Dear Test Student,\\n\\nGood news. NY"
+  },
+  {
+    "id": "A49",
+    "name": "The student sees the status Approved",
+    "ok": true,
+    "detail": "{\"applications\":[{\"id\":1,\"status\":\"Approved\",\"appliedDate\":\"2026-11-07\",\"jobId\":"
+  },
+  {
+    "id": "A50",
+    "name": "Approving again does not send a second email",
+    "ok": true,
+    "detail": "{\"ok\":true,\"email\":\"none\"}"
+  },
+  {
+    "id": "A51",
+    "name": "A company can reject an application and the student is emailed",
+    "ok": true,
+    "detail": "{\"ok\":true,\"email\":\"sent\"}"
+  },
+  {
+    "id": "A52",
+    "name": "The rejection email is polite and names the company",
+    "ok": true,
+    "detail": "{\"to\":\"test.student@buk.edu.ng\",\"subject\":\"Update on your application for Frontend Intern at Bright Labs\",\"body\":\"Dear Test Student,\\n\\nThank you for applying f"
+  }
+]

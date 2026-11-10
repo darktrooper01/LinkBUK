@@ -1,0 +1,212 @@
+[
+  {
+    "id": "U01",
+    "name": "Home shows the three roles and no listings",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U02",
+    "name": "Signup shows the registration number format error",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U03",
+    "name": "Valid signup opens the student dashboard",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U04",
+    "name": "Student sees the three approved listings",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U05",
+    "name": "Search narrows the list to one job",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U06",
+    "name": "Type filter shows internships only",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U07",
+    "name": "Apply shows a Pending badge",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U08",
+    "name": "My Applications lists it",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U09",
+    "name": "Event registration is saved and shown",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U10",
+    "name": "Session survives a page reload",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U11",
+    "name": "Event registration survives a reload",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U12",
+    "name": "Profile changes are saved",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U25",
+    "name": "Student uploads a CV and the file name is shown",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U13",
+    "name": "Wrong password is refused with a message",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U14",
+    "name": "New company sees the pending notice",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U15",
+    "name": "Pending company cannot post: form is switched off",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U16",
+    "name": "Admin overview shows counts from the database",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U17",
+    "name": "Admin approves the company",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U18",
+    "name": "Approved company no longer sees the pending notice",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U19",
+    "name": "Approved company can post and sees it as pending",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U20",
+    "name": "Admin approves the listing and the queue empties",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U21",
+    "name": "Approved listing is visible to the student",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U27",
+    "name": "Student opens the details and sees the description, requirements and qualifications",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U22",
+    "name": "Company sees the student applicant",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U26",
+    "name": "Company downloads the applicant's CV and the file is identical",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U23",
+    "name": "Company marks the application reviewed",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U28",
+    "name": "Company approves the application and is told the student was emailed",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "U29",
+    "name": "The approval email reached the student's address",
+    "ok": true,
+    "detail": "[{\"to\":\"mahmoud@buk.edu.ng\",\"subject\":\"Your application for Backend Intern at Opay.co has been approved\",\"body\":\"Dear Mahmoud Muhammad,\\n\\nGood news. Opay.co has reviewed your CV and approved your application for Backend Intern. The company may contact you directly with the next steps.\\n\\nYou can see the status of all your applications on the BUK Industry and Corporate Collaboration Portal.\\n\\nBest wishes,\\r\\nLinkBUK\\r\\n\"}]"
+  },
+  {
+    "id": "U24",
+    "name": "No script errors during all flows",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "R01",
+    "name": "No horizontal overflow on 12 screens at 320px wide",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "R02",
+    "name": "No horizontal overflow on 12 screens at 360px wide",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "R03",
+    "name": "No horizontal overflow on 12 screens at 390px wide",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "R04",
+    "name": "No horizontal overflow on 12 screens at 768px wide",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "R05",
+    "name": "No horizontal overflow on 12 screens at 1024px wide",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "id": "R06",
+    "name": "No horizontal overflow on 12 screens at 1440px wide",
+    "ok": true,
+    "detail": ""
+  }
+]
